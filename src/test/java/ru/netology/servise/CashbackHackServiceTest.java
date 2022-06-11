@@ -34,6 +34,14 @@ class CashbackHackServiceTest {
 
         assertEquals(expected, actual);
     }
+    @Test
+    void shouldRemainWhenAmountMultipleHalfThousand() {
+        CashbackHackService service = new CashbackHackService();
+        int expected = 500;
+        int actual = service.remain(2500);
+
+        assertEquals(expected, actual);
+    }
 }
 
 
